@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="principal">
+
+            <div class="cg">
+                <h1> O que é carga glicêmica?</h1><br>
+                <span>A carga glicêmica (CG) é uma medida que considera
+                tanto o índice glicêmico (IG) quanto a quantidade de
+                carboidratos em uma porção do alimento. Ela reflete
+                o impacto real de um alimento nos níveis de
+                glicose no sangue, levando em conta a porção consumida.</span><br><br>
+    
+                <h3>A fórmula para calcular a carga glicêmica é:</h3><br>
+                    
+                <span>CG = (IG x Carboidratos da porção em gramas) / 100</span><br><br>
+                    
+                <h3>Classificação da carga glicêmica:</h3><br>
+                    
+                <span>Baixa: 0-10</span><br>
+                    
+                <span>Média: 11-19</span><br>
+                    
+                <span>Alta: 20 ou mais</span><br><br>
+                    
+                <span>A CG ajuda a avaliar alimentos em termos de seu efeito</span>
+                 <span>glicêmico total no organismo, sendo útil para diabéticos e para controle de peso.</span><br>
+
+                <h1>O que são carboidratos?</h1><br>
+                <span>Os carboidratos são um dos três macronutrientes essenciais
+                     para o corpo humano (junto com proteínas e gorduras). Eles
+                      são a principal fonte de energia para o organismo,
+                       especialmente para o cérebro e os músculos.</span><br><br>
+                <span><strong>Compostos orgânicos:</strong>Formados por átomos de carbono, hidrogênio e oxigênio.
+
+                    <strong>Função principal:</strong>Fornecer energia rápida e eficiente para o corpo.<br><br>
+                    
+                    <strong>Classificação:</strong><br><br>
+                    
+                    <strong>Simples: </strong>Açúcares de rápida absorção (ex.: glicose, frutose, sacarose).<br><br>
+                    
+                    <strong>Complexos: </strong>Carboidratos de absorção mais lenta, ricos em fibras (ex.: amido, celulose).<br><br>
+
+                    <strong>Fontes de carboidratos:</strong><br><br>
+                    <strong>Simples: </strong>Açúcar, mel, refrigerantes, doces, frutas.<br><br>
+
+                    <strong>Complexos:</strong> Arroz, massas, pães, batata, cereais integrais, legumes, vegetais.<br><br>
+
+                    <strong>Funções no organismo</strong><br><br>
+                    <strong>Energia:</strong> São a principal fonte de energia para as células.<br><br>
+
+                    <strong>Reserva energética:</strong> Armazenados no fígado e músculos na forma de glicogênio.<br><br>
+
+                    <strong>Saúde intestinal:</strong> As fibras dos carboidratos complexos ajudam na digestão e no funcionamento do intestino.<br><br>
+
+                    <strong>Regulação metabólica:</strong> Influenciam os níveis de glicose no sangue e a produção de insulina.<br><br>
+
+                    <strong>Tipos de carboidratos</strong><br><br>
+                    <strong>Monossacarídeos</strong> Unidades básicas (ex.: glicose, frutose).<br><br>
+
+                    <strong>Dissacarídeos: </strong>Dois monossacarídeos unidos (ex.: sacarose, lactose).<br><br>
+
+                    <strong>Polissacarídeos: </strong>Cadeias longas de monossacarídeos (ex.: amido, glicogênio, fibras).<br><br>
+                     Carboidratos são nutrientes essenciais que fornecem energia ao corpo. Devem ser consumidos com equilíbrio,
+                     priorizando fontes complexas e ricas em fibras, como grãos integrais, legumes e vegetais, para manter a 
+                     saúde e evitar picos de glicose no sangue.</span>
+                
+            </div>
+
+            <div class="ig">
+                <h1> O que é índice glicêmico?</h1><br>
+                <span>O índice glicêmico (IG) é uma medida que indica a velocidade
+                com que um alimento aumenta o nível de glicose no sangue após
+                ser consumido. Alimentos com IG alto (acima de 70) são
+                rapidamente digeridos, elevando a glicose rapidamente.
+                Alimentos com IG baixo (abaixo de 55) são digeridos mais lentamente,
+                liberando glicose de forma gradual.</span><br><br>
+    
+                <h3>Classificação do IG:</h3><br>
+                    
+                    <span>Baixo: 0-55</span><br><br>
+                    
+                    <span>Médio: 56-69</span><br><br>
+                    
+                    <span>Alto: 70 ou mais</span><br><br>
+                    
+                    <span>É importante para o controle de glicose, especialmente para diabéticos.</span><br><br>
+    
+                    <h2>Como reduzir o índice glicêmico dos alimentos?</h2><br>
+                    <h3>Combine carboidratos com proteínas e gorduras saudáveis</h3><br>
+                    <span>A combinação de carboidratos com proteínas (como ovos, frango ou peixe)
+                    e gorduras saudáveis (como abacate, azeite ou castanhas) retarda a digestão e reduz o IG.
+                    Uma combinação perfeita é arroz com feijão e uma porção de abacate.</span>
+            </div>
+
+            <div class="entrada">
+                <h3>Tabela de informações nutricionais de alimentos</h3>
+                <div>
+                    <label for="alimento"> Nome do alimento</label>
+                    <input type="text" id="alimento" name="alimento">
+                </div>
+                <div>
+                    <label for="gramas">Porção em gramas</label>
+                    <input type="text" id="gramas" name="gramas">
+                </div>
+                <button type="button" onclick="exibirInfo()">Ver informações nutricionais</button>
+                <span id="span"> ... </span>
+                <div class="AlimentoEGramas">
+                    <div>
+                        <h4 id="mudarradio"  class="cor1">Alimento</h4>
+                        <h4 id="mudarradio2"  class="cor2">Gramas</h4>
+                        <h4 id="mudarradio3"  class="cor1"> Calorias</h4>
+                        <h4 id="mudarradio4"  class="cor2">Carboidratos</h4>
+                        <h4 id="mudarradio5"  class="cor1">Proteínas</h4>
+                        <h4 id="mudarradio6"  class="cor2">Gorduras totais</h4>
+                        <h4 id="mudarradio7"  class="cor1">Fibras</h4>
+                        <h4 id="mudarradio8"  class="cor2">Índice glicêmico</h4>
+                        <h4 id="mudarradio9"  class="cor1">Carga glicêmica</h4>
+                    </div>
+                    <div id="result">
+                        <p id="alim" class="cor1"></p>
+                        <p id="gram" class="cor2"></p>
+                        <p id="calorias" class="cor1"></p>
+                        <p id="carbo" class="cor2"></p>
+                        <p id="prot" class="cor1"></p>
+                        <p id="gord" class="cor2"></p>
+                        <p id="fib" class="cor1"></p>
+                        <p id="ig" class="cor2"></p>
+                        <p id="cg" class="cor1"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ref">
+            <p><strong>Referências</strong><br>
+            
+            Organização Mundial da Saúde (OMS)
+
+            Documentos sobre nutrição e carboidratos:
+            https://www.who.int/health-topics/nutrition<br>
+            Harvard T.H. Chan School of Public Health
+
+             Artigo sobre carboidratos e saúde:
+             https://www.hsph.harvard.edu/nutritionsource/carbohydrates/<br>
+
+             Academy of Nutrition and Dietetics (AND)
+
+             Informações sobre macronutrientes e carboidratos:
+             https://www.eatright.org
+            </p>
+        </div>
+        
+         <script src="jscript.js"></script>
+        
+
+        <footer>
+            <a class="facebook" href="https://www.facebook.com/dalvan.lima.520"></a>
+            <a class="instagram" href="https://www.instagram.com/thedalvan/"></a>
+        </footer>
+        
+    </body>
+</html>
