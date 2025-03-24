@@ -109,28 +109,9 @@ function exibirInfo() {
         document.getElementById("cg").innerHTML = carga_g + " / "+ Cg;
         document.getElementById("fib").innerHTML = fibras + " g";
 
-        document.getElementById("alim").style.borderRadius = "0 0 10px 0";
-        document.getElementById("gram").style.borderRadius = "0 0 10px 0";
-        document.getElementById("calorias").style.borderRadius = "0 0 10px 0";
-        document.getElementById("carbo").style.borderRadius = "0 0 10px 0";
-        document.getElementById("prot").style.borderRadius = "0 0 10px 0";
-        document.getElementById("gord").style.borderRadius = "0 0 10px 0";
-        document.getElementById("ig").style.borderRadius = "0 0 10px 0";
-        document.getElementById("cg").style.borderRadius = "0 0 10px 0";
-        document.getElementById("fib").style.borderRadius = "0 0 10px 0";
-
-        document.getElementById("mudarradio").style.borderRadius = "10px 0 0 0";
-        document.getElementById("mudarradio2").style.borderRadius = "10px 0 0 0";
-        document.getElementById("mudarradio3").style.borderRadius = "10px 0 0 0";
-        document.getElementById("mudarradio4").style.borderRadius = "10px 0 0 0";
-        document.getElementById("mudarradio5").style.borderRadius = "10px 0 0 0";
-        document.getElementById("mudarradio6").style.borderRadius = "10px 0 0 0";
-        document.getElementById("mudarradio7").style.borderRadius = "10px 0 0 0";
-        document.getElementById("mudarradio8").style.borderRadius = "10px 0 0 0";
-        document.getElementById("mudarradio9").style.borderRadius = "10px 0 0 0";
-
         // Exibe o resultado
         document.getElementById("result").style.display = "block";
+        document.getElementById("result1").style.display = "block";
 
         // Oculta a mensagem de erro, se houver
         document.getElementById("span").style.display = "none";
@@ -139,6 +120,7 @@ function exibirInfo() {
 
         // Exibe a mensagem de erro
         document.getElementById("span").style.display = "block";
+        document.getElementById("span").style.color = "#f8aa00";
 
         // Limpa o conteúdo de resultado
         document.getElementById("alim").innerHTML = "";
@@ -150,16 +132,6 @@ function exibirInfo() {
         document.getElementById("ig").innerHTML = "";
         document.getElementById("cg").innerHTML = "";
         document.getElementById("fib").innerHTML = "";
-
-        document.getElementById("mudarradio").style.borderRadius = "10px 0 10px 0";
-        document.getElementById("mudarradio2").style.borderRadius = "10px 0 10px 0";
-        document.getElementById("mudarradio3").style.borderRadius = "10px 0 10px 0";
-        document.getElementById("mudarradio4").style.borderRadius = "10px 0 10px 0";
-        document.getElementById("mudarradio5").style.borderRadius = "10px 0 10px 0";
-        document.getElementById("mudarradio6").style.borderRadius = "10px 0 10px 0";
-        document.getElementById("mudarradio7").style.borderRadius = "10px 0 10px 0";
-        document.getElementById("mudarradio8").style.borderRadius = "10px 0 10px 0";
-        document.getElementById("mudarradio9").style.borderRadius = "10px 0 10px 0";
 
         // Oculta o resultado
         document.getElementById("result").style.display = "none";

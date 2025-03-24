@@ -1,205 +1,176 @@
 * {
-    margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
-
-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    padding-top: 40px;
-    background-image: url('corpo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Estilos padrão para dispositivos móveis */
+body {
+  background-image: url("corpo.jpg");
+  font-size: 14px;
+  width: 100%;
+  color: white;
 }
-
 .principal{
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  padding: 10%;
 }
 .entrada{
+  border: solid;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 16px;
-  width: auto;
-  height: 50%;
-  border: solid gainsboro 1px;
-  background: linear-gradient(to right,rgb(255,255,139,0.6),
-  rgb(37,80,0,0.6));
+  justify-content: center;
+  background-image: linear-gradient(to right,rgb(173,140,183,0.6) , rgb(208,198,163,0.6));
   border: none;
   border-radius: 10px;
 }
-.entrada,label,input{
-padding: 10px;
-color: rgb(18, 10, 10);
-font-weight: bold;
-}
 .AlimentoEGramas{
-    display: flex;
-}
-h4{
-    margin-right: 130px;
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px;
-    color: black;
-    border-radius:10px 0 10px 0;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-p{
-    margin-right: 130px;
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px;
-    color: black;
-
-}
-
-input{
-    border-radius: 10px 0 10px 0;
-    margin-top: 10px;
-    border: solid 1px rgb(141,182,0);
-    height: 30px;
+h4,p{
+  padding: 10px;
+  width: 100%;
 }
 
 .cor1{
-    background-color: rgb(37,80,0,0.6);
-    
+  background-color: rgb(198,163,208,0.6);
 }
 
 .cor2{
-    background-color:rgb(255,255,139,0.6);
+  background-color: rgb(149,193,183);
 }
+input{
+  margin: 10px;
+  border-radius: 10px;
+  height: 25px;
+}
+
 button{
-    height: 30px;
-    font-size: 13px;
-    margin-top: 10px;
-    margin-left: 170px;
-    padding: 10px;
-    border-radius: 10px 0 10px 0;
-    font-weight: bold;
-    background: linear-gradient(to right,rgb(141,182,0),rgb(198,218,82));
-    border: none;
-    cursor: pointer;
+  padding: 1%;
+  margin: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right,rgb(173,140,183,0.6) , 
+  rgb(149,193,183,0.6));
 }
 
 #result{
-    display: none;
+  display: none;
 }
-#span{
-    display: none;
-    margin-top: 20px;
-    color: red;
+#result1{
+  display: none;
+}
 
-}
-.ig{
-    width: 30%;
-    color: white;
-    
-}
-.cg{
-    
-    width: 30%;
-    color: white;
-    
-
+h1,h2,h3{
+  background-color: rgb(149,193,183,0.6);
 }
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: black;
-    width: 100%;
-    color: white;
-    height: 100px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  background-color: black;
+  height: 30px;
 }
-
-.facebook{
-    background-image: url('fcb.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 50px;
-    width: 50px;
-    transition: opacity 0.3s ease;
-}
-
-.instagram{
-    background-image: url('ins.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 50px;
-    width: 50px;
-    transition: opacity 0.3s ease;
-}
-.facebook:hover {
-    transform: scale(1.1)
-  }
-.instagram:hover {
-    transform: scale(1.1)
-  }
-
 .ref{
-    color: white;
+  width: 100%;
+  padding: 7%;
+}
+
+#cg{
+  border-radius: 0 0 10px 0;
+}
+#mudarradio9{
+  border-radius: 0 0 0 10px;
+}
+#alim{
+  border-radius: 0 10px 0 0;
+}
+#mudarradio{
+  border-radius: 10px 0 0 0;
+}
+.facebook{
+  background-image: url("fcb.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  width: 20px;
+  height: 20px;
+}
+.instagram{
+  background-image: url("ins.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  width: 20px;
+  height: 20px;
+}
+
+#span{
+  display: none;
+}
+.gitt{
+  background-color:black;
+  width: 100%;
+  height: 30px;
+  padding: 1%;
+}
+.git{
+  background-image: url("gi.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  margin-left: 40px;
+}
+/* Para telas médias (tablets) */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  .principal{
+    justify-items: center;
+  }
+  .entrada{
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 2%;
+
+  }
+  footer{
+    height: 80px;
+  }
+  .facebook,.instagram{
+    width: 50px;
+    height: 50px;
+  }
+  .ref{
+    padding:0;
+    padding-left: 9%;
+  }
+  .gitt{
     width: 100%;
+    height: 80px;
+  }
+  .git{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    border: solid black 2 px;
+  }
 }
-h1,h2,h3,span{
-    color: #ffffff;
-    background-color:rgb(88,129,0,0.6);
-    border-radius: 10px 0 10px 0;
-}
-
-.ref p{
-    color: white;
-}
-
-@media screen and (max-width: 800px) {
-    
-      .principal{
-        flex-direction: column;
-        align-items: center;
-      }
-      .cg{
-        width: 100%;
-        font-size: 15px;
-        padding: 50px;
-      }
-      .ig{
-        width: 100%;
-        font-size: 15px;
-        padding: 50px;
-      }
-      .entrada{
-        font-size: 12px;
-        padding: 10%;
-        
-      }
-      button{
-        width:40%;
-        font-size: 10px;
-        margin-right: 70px;
-        height: 5%;
-      }
-      input{
-        width: 50%;
-      }
-      .ref{
-        font-size: 12px;
-      }
-      h4{
-        text-align: center;
-      }
-      .facebook,.instagram{
-        height: 25px;
-        width: 25px;
-      }
-    }
